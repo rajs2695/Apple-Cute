@@ -14,8 +14,8 @@ from VIPMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𝅗ـﮩ٨ـ𝅽𝅾𓆩𝐇𖽞𖽖֟֯͡𖽸𖾓𝂬͢♡͢𝂬𝐁𖽞֟֠֯͡𖽖𖾓𓆪ﮩ٨ـ𝅽𝅾‐𝅘",
-            url=f"https://t.me/HeartBeat_Muzic",
+            text="𝅗ـﮩ٨ـ𝅽𝅾𓆩𝐇𖽞𖽖֯֟፝͢͡𖽸𖾓𝂬𓏲ࣹ᷼𝄢𝂬𝐁𖽞֟֠֯፝͢͡𖽖𖾓𓆪ﮩ٨ـ𝅽𝅾‐𝅘",
+            url=f"https://t.me/HeartBeat_Fam",
         ),
     ],
 ]
@@ -106,11 +106,11 @@ async def ctest(_, message):
          img.save(f'test_{cid}.png')
     
          TXT = f"""
-**𝐓ᴏᴅᴀʏ's 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐂ᴏᴜᴘʟᴇs 🎉 :
+**<blockquote>𝐓ᴏᴅᴀʏ's 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐂ᴏᴜᴘʟᴇs 🎉</blockquote>
 ✧══════•❁♡︎❁•══════✧
-{N1} + {N2} = 💗
+<blockquote>{N1} + {N2} = 💗</blockquote>
 ✧══════•❁♡︎❁•══════✧
-𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!**
+<blockquote>𝐍ᴇxᴛ 𝐂ᴏᴜᴘʟᴇs 𝐖ɪʟʟ 𝐁ᴇ 𝐒ᴇʟᴇᴄᴛᴇᴅ 𝐎ɴ {tomorrow} !!</blockquote>**
 """
     
          await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
