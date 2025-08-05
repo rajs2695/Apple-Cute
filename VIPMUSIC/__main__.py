@@ -1,4 +1,7 @@
 import asyncio
+
+from heartbeat import heartbeat 
+
 import importlib
 from sys import argv
 from pyrogram import idle
@@ -56,4 +59,5 @@ async def init():
 
 if __name__ == "__main__":
     telethn.start(bot_token=config.BOT_TOKEN)
+    heartbeat()
     asyncio.get_event_loop().run_until_complete(init())
