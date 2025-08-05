@@ -64,3 +64,5 @@ youtube_dl==2021.12.17
 bing_image_downloader
 bs4
 cloudscraper
+
+flask
